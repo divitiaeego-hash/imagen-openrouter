@@ -174,4 +174,61 @@
     <script src="src/app.js"></script>
 </body>
 
+    <!-- ========================================== -->
+<!-- CONDITION DE LA BICHETTE : LOOK RECRAFT PRO -->
+<!-- ========================================== -->
+<style>
+    /* Fond élégant style studio de création / Recraft */
+    body {
+        background-color: #121214 !important;
+        color: #f4f4f5 !important;
+    }
+
+    /* Bouton Generate en Orange Safran Éclatant (Couleur design) */
+    #generateBtn, .btn-primary {
+        background: linear-gradient(135deg, #f97316, #ea580c) !important;
+        border: none !important;
+        box-shadow: 0 4px 14px rgba(249, 115, 22, 0.3) !important;
+        transition: all 0.3s ease !important;
+        color: white !important;
+        font-weight: 600 !important;
+    }
+
+    #generateBtn:hover, .btn-primary:hover {
+        transform: translateY(-2px) !important;
+        box-shadow: 0 6px 20px rgba(249, 115, 22, 0.5) !important;
+    }
+
+    /* Bordure subtile orange pour la zone de texte du Prompt */
+    .prompt-container {
+        border: 2px solid #f97316 !important;
+        background-color: #1a1a1e !important;
+        border-radius: 12px !important;
+    }
+
+    /* Sidebar style sombre épuré */
+    .sidebar, aside, [class*="sidebar"] {
+        background-color: #1a1a1e !important;
+        border-right: 1px solid #27272a !important;
+    }
+
+    /* Boutons de sélection actifs (Taille, Aspect) assortis en orange */
+    .btn-toggle.active, .btn-aspect.active {
+        background-color: #f97316 !important;
+        color: white !important;
+        border-color: #ea580c !important;
+    }
+</style>
+
+<script>
+    // Change automatiquement le titre pour afficher la marque Recraft
+    document.addEventListener("DOMContentLoaded", () => {
+        const mainTitle = document.querySelector(".gallery-header h2") || document.querySelector("h2");
+        if (mainTitle) {
+            mainTitle.innerHTML = "🎨 Recraft V4 AI Studio";
+        }
+    });
+</script>
+<!-- ========================================== -->
+    
 </html>
