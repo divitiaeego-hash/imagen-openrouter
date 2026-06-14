@@ -89,7 +89,7 @@ const ImagenDB = {
 // ===== State Management =====
 const state = {
     apiKey: localStorage.getItem('imagen_api_key') || '',
-    selectedModel: localStorage.getItem('imagen_model') || 'black-forest-labs/flux.2-pro',
+    selectedModel: localStorage.getItem('imagen_model') || 'recraft/recraft-v4.1',
     imageSize: localStorage.getItem('imagen_size') || '1024x1024',
     imageQuality: localStorage.getItem('imagen_quality') || '1K',
     aspectRatio: localStorage.getItem('imagen_aspect_ratio') || '1:1',
@@ -102,13 +102,6 @@ const state = {
 
 // ===== Model Configurations =====
 const MODEL_CONFIGS = {
-    'black-forest-labs/flux.2-pro': {
-        name: 'Flux 2 Pro',
-        supportsImageSize: false,
-        supportsAspectRatio: true,
-        supportsImageInput: false,
-        maxReferences: 0
-    },
     'recraft/recraft-v4.1': {
         name: 'Recraft V.4.1',
         supportsImageSize: false,
