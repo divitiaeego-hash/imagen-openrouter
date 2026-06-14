@@ -89,7 +89,7 @@ const ImagenDB = {
 // ===== State Management =====
 const state = {
     apiKey: localStorage.getItem('imagen_api_key') || '',
-    selectedModel: localStorage.getItem('imagen_model') || 'google/gemini-2.5-flash-image',
+    selectedModel: localStorage.getItem('imagen_model') || 'black-forest-labs/flux.2-pro',
     imageSize: localStorage.getItem('imagen_size') || '1024x1024',
     imageQuality: localStorage.getItem('imagen_quality') || '1K',
     aspectRatio: localStorage.getItem('imagen_aspect_ratio') || '1:1',
@@ -102,99 +102,8 @@ const state = {
 
 // ===== Model Configurations =====
 const MODEL_CONFIGS = {
-    'google/gemini-2.5-flash-image': {
-        name: 'Gemini 2.5 Flash Image',
-        supportsImageSize: true,
-        supportsAspectRatio: true,
-        supportsImageInput: true,
-        maxReferences: 3
-    },
-    'google/gemini-2.5-flash-image-preview': {
-        name: 'Gemini 2.5 Flash Image (Preview)',
-        supportsImageSize: true,
-        supportsAspectRatio: true,
-        supportsImageInput: true,
-        maxReferences: 3
-    },
-    'google/gemini-3.1-flash-image-preview': {
-        name: 'Gemini 3.1 Flash Image (Preview)',
-        supportsImageSize: true,
-        supportsAspectRatio: true,
-        supportsImageInput: true,
-        maxReferences: 3
-    },
-    'google/gemini-3-pro-image-preview': {
-        name: 'Gemini 3 Pro Image (Preview)',
-        supportsImageSize: true,
-        supportsAspectRatio: true,
-        supportsImageInput: true,
-        maxReferences: 14
-    },
-    'openai/gpt-5-image': {
-        name: 'GPT-5 Image',
-        supportsImageSize: false,
-        supportsAspectRatio: true,
-        supportsImageInput: true,
-        maxReferences: 1
-    },
-    'openai/gpt-5-image-mini': {
-        name: 'GPT-5 Image Mini',
-        supportsImageSize: false,
-        supportsAspectRatio: true,
-        supportsImageInput: true,
-        maxReferences: 1
-    },
     'black-forest-labs/flux.2-pro': {
         name: 'Flux 2 Pro',
-        supportsImageSize: false,
-        supportsAspectRatio: true,
-        supportsImageInput: false,
-        maxReferences: 0
-    },
-    'black-forest-labs/flux.2-max': {
-        name: 'Flux 2 Max',
-        supportsImageSize: false,
-        supportsAspectRatio: true,
-        supportsImageInput: false,
-        maxReferences: 0
-    },
-    'black-forest-labs/flux.2-flex': {
-        name: 'Flux 2 Flex',
-        supportsImageSize: false,
-        supportsAspectRatio: true,
-        supportsImageInput: false,
-        maxReferences: 0
-    },
-    'black-forest-labs/flux.2-klein-4b': {
-        name: 'Flux 2 Klein 4B',
-        supportsImageSize: false,
-        supportsAspectRatio: true,
-        supportsImageInput: false,
-        maxReferences: 0
-    },
-    'bytedance-seed/seedream-4.5': {
-        name: 'Seedream 4.5',
-        supportsImageSize: false,
-        supportsAspectRatio: true,
-        supportsImageInput: false,
-        maxReferences: 0
-    },
-    'sourceful/riverflow-v2-fast-preview': {
-        name: 'Riverflow V2 Fast',
-        supportsImageSize: false,
-        supportsAspectRatio: true,
-        supportsImageInput: false,
-        maxReferences: 0
-    },
-    'sourceful/riverflow-v2-standard-preview': {
-        name: 'Riverflow V2 Standard',
-        supportsImageSize: false,
-        supportsAspectRatio: true,
-        supportsImageInput: false,
-        maxReferences: 0
-    },
-    'sourceful/riverflow-v2-max-preview': {
-        name: 'Riverflow V2 Max',
         supportsImageSize: false,
         supportsAspectRatio: true,
         supportsImageInput: false,
