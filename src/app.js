@@ -1320,3 +1320,16 @@ window.removeReference = removeReference;
 
 // ===== Initialize =====
 document.addEventListener('DOMContentLoaded', init);
+
+// ===== CORRECTIF VISUEL POUR TON PROJET =====
+// On intercepte le clic du bouton générer pour masquer instantanément le message "No image"
+if (elements.generateBtn) {
+    elements.generateBtn.addEventListener('click', () => {
+        if (elements.galleryEmpty) {
+            elements.galleryEmpty.style.display = 'none'; // Cache le texte du milieu
+        }
+        if (elements.gallery) {
+            elements.gallery.style.display = 'grid'; // Force la zone de l'image à s'ouvrir au centre
+        }
+    });
+}
