@@ -108,6 +108,13 @@ const MODEL_CONFIGS = {
         supportsAspectRatio: true,
         supportsImageInput: false,
         maxReferences: 0
+    },
+    'recraft/recraft-v4.1': {
+        name: 'Recraft V.4.1',
+        supportsImageSize: false,
+        supportsAspectRatio: true,
+        supportsImageInput: false,
+        maxReferences: 0
     }
 };
 
